@@ -23,7 +23,7 @@ else
   # Check if the destination dir exists. If not create it
   if [ ! -d "$BACKUPDIRDEST/"$(date +"%m-%d-%Y")"/" ]; then
       # Creates directory for today's backup
-      mkdir $BACKUPDIRDEST/"$(date +"%m-%d-%Y")"
+      mkdir -p $BACKUPDIRDEST/"$(date +"%m-%d-%Y")"
   fi
 
   # Echo the log line.
